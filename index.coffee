@@ -45,6 +45,17 @@ module.exports = (md, options = {}) ->
       for j in [0...block.children.length].reverse()
         token = block.children[j]
         switch token.type
+          when 'image'
+            for replacement in replacements
+              if options[replacement.name] ? replacement.default ? true
+                token.attrs[0][1] =
+                  token.attrs[0][1].replace replacement.re, replacement.sub
+
+          when 'html_block'
+            for replacement in replacements
+              if options[replacement.name] ? replacement.default ? true
+                token.content =
+                  token.content.replace replacement.re, replacement.sub
           when 'link_open'
             inside_autolink -= 1 if token.info == 'auto'
           when 'link_close'
