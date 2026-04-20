@@ -4,7 +4,7 @@
   "description": "Customize replacements in markdown-it typographer",
   "main": "index.js",
   "scripts": {
-    "prepublish": "coffee -c index.coffee",
+    "prepare": "coffee -c index.coffee",
     "test": "mocha test.coffee"
   },
   "repository": {
