@@ -1,4 +1,9 @@
 # markdown-it-replacements
+
+Forked from https://github.com/edemaine/markdown-it-replacements
+
+**This fork applies the replacements into html and images blocks from the parser**
+
 This [markdown-it](https://github.com/markdown-it/markdown-it) plugin
 replaces the
 "[replacements](https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.js)"
@@ -20,6 +25,7 @@ Additional rules can be added by modifying the `replacements` module attribute
 (an array of rules, where each `rule` has a name `rule.name`,
 regular expression `rule.re`, substitution `rule.sub`, and boolean
 default on/off `rule.default`).
+
 
 ## Sample Usage
 

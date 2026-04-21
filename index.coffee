@@ -50,7 +50,6 @@ module.exports = (md, options = {}) ->
               if options[replacement.name] ? replacement.default ? true
                 token.attrs[0][1] =
                   token.attrs[0][1].replace replacement.re, replacement.sub
-
           when 'html_block'
             for replacement in replacements
               if options[replacement.name] ? replacement.default ? true
