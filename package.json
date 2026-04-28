@@ -21,10 +21,10 @@
     "url": "https://github.com/SofaComplianceRobotics/markdown-it-replacements/issues"
   },
   "devDependencies": {
-    "coffee-script": "^1.12.4",
-    "markdown-it": "^12.3.2"
+    "coffee-script": ">=1.12.4",
+    "markdown-it": ">=12.3.2"
   },
   "peerDependencies": {
-    "markdown-it": "^12.3.2"
+    "markdown-it": ">=12.3.2"
   }
 }
